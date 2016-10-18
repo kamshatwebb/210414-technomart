@@ -1,7 +1,7 @@
 ﻿# Личный проект «Техномарт»
 
 * Студент: [Kamshat Webb](https://up.htmlacademy.ru/htmlcss/15/user/210414).
-* Наставник: `Денис Власов`(https://up.htmlacademy.ru/htmlcss/15/user/18034).
+* Наставник: [Денис Власов](https://up.htmlacademy.ru/htmlcss/15/user/18034).
 
 ---
 
