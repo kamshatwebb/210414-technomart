@@ -1,5 +1,13 @@
-Папка для шрифтов.
+﻿Папка для шрифтов.
 
 --
 
 В макете используются шрифты Cuprum и PT Sans.
+
+
+<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+
+
+font-family: 'Cuprum', sans-serif;
+font-family: 'Cuprum', sans-serif;
+font-family: 'PT Sans', sans-serif;

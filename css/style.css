@@ -1,0 +1,117 @@
+body {
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-color: 000000;
+	min-width: 960px;
+	background: white;
+	
+}
+
+.top-header {
+	margin-bottom: 60px;
+	background: #f1f5f7;
+
+}
+
+div, article, a { 
+outline: 1px solid red; 
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+.index-logo {
+	float: left;
+	min-width: 220px;
+	min-height: 40px;	
+	box-shadow: 
+	font-color: red;
+	background-color: red;
+	text-align: center;
+}
+
+form {
+	float: left;
+	margin-left: 10px;
+	min-width: 90px;
+	min-height: 40px;
+	border: 1px solid red;
+}
+
+
+.bookmark {
+	float: left;
+	min-width: 140px;
+	min-height: 40px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+
+.basket {
+	float: left;
+	width: 140px;
+	min-height: 40px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+
+.checkout {
+	float: right;
+	min-width: 150px;
+	min-height: 40px;
+	text-align: center;
+}
+
+
+
+.description {
+	float: left;
+	width: 300px;
+	min-height: 155px;
+	margin-right: 10px;
+	clear: both;
+	text-align: center;
+
+
+} 
+
+
+.contacts-header {
+	float: left;
+	min-width: 300px;
+	min-height: 160;
+	text-align: center;
+	border: 2px solid white;
+	margin-top: 45px;
+
+
+}
+
+.adress-header {
+	float: left;
+	min-width: 300px;
+	min-height: 160;
+	margin-right: 50px;
+	text-align: center;
+}
+
+.user-block {
+	float: right;
+	width: 300px;
+	min-height: 160px;
+	margin-bottom: 200px;
+	
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
