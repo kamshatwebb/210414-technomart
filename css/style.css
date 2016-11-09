@@ -22,16 +22,13 @@ outline: 1px solid red;
 .container {
 	width: 940px;
 	margin: 0 auto;
-		
 }
 
 
-.top-header {
-	
+.top-header {	
 	color: #f8f8f8;
 	background-color: #32425c;
-	
-}
+	}
 
 .index-logo {
 	float: left;
@@ -243,8 +240,9 @@ margin-bottom: 60px;
 .slider {
 	float: left;
 	min-width: 620px;
-	padding-top: 46px;
+	min-height: 260px;
 	margin-top: 20px;
+	padding: 0px;
 }
 
 .slider h2 {
@@ -278,6 +276,8 @@ margin-bottom: 60px;
 	min-width: 940px;
 	background: #f7f3ec;
 	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 30px;
 }
 
 
@@ -286,9 +286,27 @@ margin-bottom: 60px;
 }
 
 
+.makers {
+float: left;
+margin-right: 20px;
+margin-bottom: 20px;
+width: 218px;
+min-height: 143px;
+text-align: center;
+border: 1px solid #e5e5e5;
+background: #ffffff;
+
+
+}
+
+.makers:nth-child(4n) {
+	margin-right: 0px;
+}
+
 .popular-goods {
 
 	margin-bottom: 20px;
+
 }
 
 .catalog-item-bosch-9000 {
@@ -301,21 +319,18 @@ margin-bottom: 60px;
 
 .catalog-item-bosch-3000{
 	float: left;
-	
 	max-width: 220px;
 	min-height: 320px;
 	margin-right: 20px;
 }
 .catalog-item-bosch-6000{
 	float: left;
-
 	max-width: 220px;
 	min-height: 320px;
 	margin-right: 20px;
 }
 .catalog-item-bosch-2000{
 	float: left;
-
 	max-width: 220px;
 	min-height: 320px;
 }
@@ -346,6 +361,21 @@ margin-bottom: 60px;
 	float: right;
 	width: 300px;
 }
+
+/* Техномарт Каталог*/
+
+.breadcrumbs {
+	display: inline-block;
+	width: 360px;
+	font-size: 13px;
+	line-height: 18px;
+	
+
+}
+
+
+
+
 
 .footer-higher {
 
@@ -427,19 +457,19 @@ color: #fdebec;
 .site-name {
 	float: left;
 	width: 320px;
-	padding-bottom: 40px;
+	
 
 }
 
 .footer-social {
 	float: left;
 	width: 160px;
-	min-height: 100px;
 	display: inline-block;
 
 }
 
 .footer-copyright {
+	margin: 0;
 
 
 }
