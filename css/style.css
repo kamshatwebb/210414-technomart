@@ -24,137 +24,144 @@ outline: 1px solid red;
     display: block;
 }
 
-.sprite--icon-vk-copy {
-    width: 20px;
-    height: 12px;
-    background-position: -10px -10px;
-}
-
 .sprite-basket-layer {
     width: 59px;
     height: 72px;
-    background-position: -10px -42px;
+    background-position: -5px -5px;
 }
 
 .sprite-delivery-car {
     width: 78px;
     height: 63px;
-    background-position: -10px -134px;
-}
-
-.sprite-github {
-    width: 30px;
-    height: 30px;
-    background-position: -10px -217px;
-}
-
-.sprite-gmail {
-    width: 30px;
-    height: 30px;
-    background-position: -10px -267px;
+    background-position: -5px -87px;
 }
 
 .sprite-icon-basket {
     width: 17px;
     height: 16px;
-    background-position: -10px -317px;
+    background-position: -5px -160px;
 }
 
 .sprite-icon-bookmark {
     width: 14px;
     height: 16px;
-    background-position: -10px -353px;
+    background-position: -5px -186px;
+}
+
+.sprite-icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -212px;
+}
+
+.sprite-icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -245px;
 }
 
 .sprite-icon-down-dir {
     width: 11px;
     height: 10px;
-    background-position: -10px -389px;
+    background-position: -5px -278px;
 }
 
 .sprite-icon-facebook-copy {
     width: 10px;
     height: 18px;
-    background-position: -10px -419px;
+    background-position: -5px -298px;
+}
+
+.sprite-icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -5px -326px;
 }
 
 .sprite-icon-instagramm-copy {
     width: 17px;
     height: 17px;
-    background-position: -10px -457px;
+    background-position: -5px -348px;
 }
 
 .sprite-icon-left {
     width: 22px;
     height: 40px;
-    background-position: -10px -494px;
+    background-position: -5px -375px;
 }
 
 .sprite-icon-login {
     width: 20px;
     height: 17px;
-    background-position: -10px -554px;
+    background-position: -5px -425px;
+}
+
+.sprite-icon-logout {
+    width: 21px;
+    height: 17px;
+    background-position: -5px -452px;
 }
 
 .sprite-icon-phone {
     width: 19px;
     height: 19px;
-    background-position: -10px -591px;
+    background-position: -5px -479px;
 }
 
 .sprite-icon-right {
     width: 22px;
     height: 40px;
-    background-position: -10px -630px;
+    background-position: -5px -508px;
 }
 
 .sprite-icon-search {
     width: 17px;
     height: 17px;
-    background-position: -10px -690px;
+    background-position: -5px -558px;
 }
 
-.sprite-linkedin {
-    width: 30px;
-    height: 30px;
-    background-position: -10px -727px;
+.sprite-icon-up-dir {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -585px;
 }
 
-.sprite-stackoverflow {
-    width: 30px;
-    height: 30px;
-    background-position: -10px -777px;
+.sprite-icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -5px -605px;
+}
+
+.sprite-icon-vk-copy {
+    width: 20px;
+    height: 12px;
+    background-position: -5px -633px;
+}
+
+.sprite-shadow-service-menu {
+    width: 10px;
+    height: 272px;
+    background-position: -5px -655px;
 }
 
 .sprite-tool-nav-1 {
     width: 44px;
     height: 65px;
-    background-position: -10px -827px;
+    background-position: -5px -937px;
 }
 
 .sprite-tool-nav-2 {
     width: 78px;
     height: 62px;
-    background-position: -10px -912px;
+    background-position: -5px -1012px;
 }
 
 .sprite-tool-nav-3 {
     width: 75px;
     height: 61px;
-    background-position: -10px -994px;
+    background-position: -5px -1084px;
 }
 
-.sprite-tumblr {
-    width: 30px;
-    height: 30px;
-    background-position: -10px -1075px;
-}
-
-.sprite-twitter {
-    width: 30px;
-    height: 30px;
-    background-position: -10px -1125px;
-}
 
 .container {
 	width: 940px;
@@ -417,17 +424,12 @@ color: #47546a;
 }
 
 
-.category-item:nth-child(3n){
+.category-item:nth-child(3){
 	margin-right: 0px;
 }
 
-.category-item:nth-child(5){
-	margin-right: 0px;
-	margin-left: 20px;
-	margin-top: 20px;
-	
-}
 
+.category-item:nth-child(5),
 .category-item:nth-child(6) {
 	margin-right: 0px;
 	margin-left: 20px;
@@ -549,6 +551,7 @@ font-size: 0;
 	min-height: 530px;
 }
 
+
 .about-us-point {
 	font-size: 30px;
 	padding-top: 75px;
@@ -564,25 +567,57 @@ font-size: 0;
 	font-family: "PT Sans", sans-serif;
 }
 
+.contacts-map {
+	float: right;
+	min-height: 530px;
+
+}
+
+.contacts-map p{
+	width: 190px;
+}
+
 .about-us-features {
 	font-size: 18px;
 	line-height: 20px;
 }
 
+.about-us a {
+	float: left;
+	width: 220px;
+	min-width: 250px;
+padding: 10px 0px;
+margin: 25px;
+color:white;
+background:#ee3643;
+border-radius:3px;
+text-align: center;
+text-decoration: none;
+}
+
 .about-us-map {
 	display: block;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	
 }
 
 .find-us {
 	
 }
 
-.contacts-map {
-	float: right;
-	
-	min-height: 530px;
 
+
+.contacts-map .map-btn {
+float: left;
+width: 300px;
+min-width: 250px;
+padding: 10px 0px;
+margin: 25px;
+color:white;
+background:#ee3643;
+border-radius:3px;
+text-align: center;
+text-decoration: none;
 }
 
 /* Техномарт Каталог*/
@@ -667,7 +702,7 @@ font-size: 0;
 }
 
 .catalog-item .flag-new {
-	background:url("img/new-flag.png") no-repeat 0 0;
+	background: url("img/new-flag.png") no-repeat 0 0;
 }
 
 .catalog-item .actions {
