@@ -8,12 +8,13 @@
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     </head>
+   
     <body>
         <header class="top-header">
             <div class="container clearfix">
                 <nav class="top-navigation">
                     <div class="index-logo">
-                        <p class="main-name" style="line-height: 24px">ТЕХНОМАРТ</p>
+                        <p>ТЕХНОМАРТ</p>
                     </div>
                     <form>
                         <input type="search" name="search" placeholder="Поиск:"> 
@@ -44,7 +45,7 @@
                     <p> г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
                 </div>
                 <div class="user-block">
-                    <a class="welcome" href="#">Вход</a>
+                    <a class="welcome" href="#">Войти</a>
                     <a class="registration" href="#">Регистрация</a>							
                 </div>
                 <nav class="main-navigation clearfix">
@@ -56,42 +57,43 @@
                         <li><a href="#">Спецпредложения</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
-                    </ul>
+                    
                 </nav>
             </div>
         </header>
         <main class="container-stock">
             <div class="container">
                 <section class="category clearfix">
-                    <article class="category-item materials new">
+                    <article class="category-item materials flag-new">
+
                         <h2>Материалы</h2>
-                        <a href="#">На любой вкус</a>
+                        <a href="#">НА ЛЮБОЙ ВКУС</a>
                         
                     </article>
                     <article class="category-item tool">
                         <h2>Инструмент</h2>
-                        <a href="#">На все случаи</a>   
+                        <a href="#">НА ВСЕ СЛУЧАИ</a>   
                         
                     </article>
                     <article class="category-item build">
                         <h2>Техника</h2>
-                        <a href="#">Для стройки</a>
+                        <a href="#">ДЛЯ СТРОЙКИ</a>
                         
                     </article>
                     <div class="slider">
                         <h2>Перфораторы<br>
                             Настоящие мужские игрушки
                         </h2>
-                        <a href="#">Открыть каталог</a>
+                        <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
                     <article class="category-item sale">
                         <h2>Скидки 50%</h2>
-                        <a href="#">На 350 товаров</a>
+                        <a href="#">НА 350 ТОВАРОВ</a>
                         
                     </article>
                     <article class="category-item delivery-free">
                         <h2>Доставка</h2>
-                        <a href="#">Бесплатно</a> 
+                        <a href="#">БЕСПЛАТНО</a> 
                        
                     </article>
                 </section>
@@ -105,7 +107,7 @@
             <div class="container">
                 <div class="catalog-items-index">
                     <div class="catalog-item">
-                        
+                       <div class="flag">Новинка</div>  
                         <div class="actions">
                             <a href="#" class="catalog-item-buy">Купить</a>
                             <a href="#" class="catalog-item-bookmark">В закладки</a>
@@ -116,7 +118,7 @@
                         <div class="price">15 500 P. </div>
                     </div>
                     <div class="catalog-item">
-                        
+                        <div class="flag">Новинка</div> 
                         <div class="actions">
                             <a href="#" class="catalog-item-buy">Купить</a>
                             <a href="#" class="catalog-item-bookmark">В закладки</a>
@@ -127,7 +129,7 @@
                         <div class="price">15 500 P. </div>
                     </div>
                     <div class="catalog-item">
-                      
+                      <div class="flag">Новинка</div>
                         <div class="actions">
                             <a href="#" class="catalog-item-buy">Купить</a>
                             <a href="#" class="catalog-item-bookmark">В закладки</a>
@@ -171,15 +173,23 @@
                     <a class="makers" href="" style="line-height: 140px"><img class="point" src="img/metabo.png"  alt="Metabo"></a>
                 </div>
                  </div>
-                <section class="service-slider">
+                <section class="service-slider clearfix">
                     <div class="container">
-                        <h3>Сервисы</h3>
-                        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сих, чтобы сделать ваши покупки приятными. </p>
-                        <h3>Доставка</h3>
-                        <p>Мы с удовольствием доставим товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                    </div>
+                    		<div class="services">
+                       		 <h3>СЕРВИСЫ</h3>
+                        			<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сих, чтобы сделать ваши покупки приятными. </p>
+                        </div>
                     <div class="item-slider">
+                    <label for="">Доставка</label>
+                    <label for="">Гарантия</label>
+                    <label for="">Кредит</label>
                     </div>
+                        <div class="delivery">
+                        		<h3>ДОСТАВКА</h3>
+                        <p>Мы с удовольствием доставим товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                        </div>
+                    </div>
+
                 </section>
                 <section class="company-details">
                     <div class="container">
@@ -215,6 +225,7 @@
                     <ul>
                         
                         <li><a href="#">Компания</a></li>
+                        <li><a href="#">Новости</a></li>
                         <li><a href="#">Каталог</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
@@ -256,5 +267,6 @@
                 </div>
             </div>
         </footer>
+         </ul><script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </body>
 </html>
