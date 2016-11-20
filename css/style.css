@@ -191,18 +191,57 @@ outline: 1px solid red;
 	margin-bottom: 0px;
 	margin-top: 0px;
 	padding: 10px;
-	box-shadow: 1px 6px 0px 0px #b52933;
+	box-shadow: 0px 6px 0px 1px #b52933;
 
 
 }
 
-form {
+.top-navigation form {
 	float: left;
-	margin-left: 30px;
+	padding-left: 50px;
 	min-width: 90px;
 	min-height: 42px;
-	border: 1px solid red;
+	
 }
+
+.top-navigation input {
+	border: none;
+	width: 80px;
+	min-height: 42px;
+	margin-right: 140px;
+	color: white;
+	font-size: 17px;
+	line-height: 18px;
+	font-family: "Cuprum", sans-serif;
+	background-color: #293449;
+}
+
+.top-navigation form {
+	  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.top-navigation form::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/sprite.png") no-repeat;
+
+  opacity: 0.3;
+}
+
+.top-navigation form::before {
+	 background-position: -10px -713px;
+}
+
 
 
 .bookmark  {
@@ -521,6 +560,7 @@ color: #47546a;
   text-decoration: none;
   display: block;
   padding: 20px 33px;
+
  }
 
  .main-navigation a:active {
@@ -736,7 +776,7 @@ text-decoration: none;
 
 .makers {
 float: left;
-margin-right: 20px;
+margin-right: 19px;
 margin-bottom: 20px;
 width: 218px;
 min-height: 143px;
@@ -1031,6 +1071,29 @@ text-decoration: none;
 	margin-right: 20px;
 }
 
+.sort span {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", sans-serif;
+	margin-right: 75px;
+
+}
+
+.sort-gallery {	
+	
+	padding-left: 65px;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", sans-serif;
+	text-decoration: none;
+	color: #c1beb8;
+	border-bottom: 1px dotted red;
+	
+}
+
+
+
+
 .catalog-items {
 	float: left;
 	width: 700px;
@@ -1062,7 +1125,7 @@ text-decoration: none;
  .catalog-items-index .catalog-item:nth-child(4n)
  {
  	margin-right: 0;
- 	margin-left: 23px;
+ 	margin-left: 21px;
  }
 
 .catalog-items {
