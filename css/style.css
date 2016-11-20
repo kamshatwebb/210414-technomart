@@ -231,12 +231,41 @@ form {
 	 background-position: -10px -221px;
 }
 
+.basket {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.basket::before {
+	  content: "";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/sprite.png") no-repeat;
+
+  opacity: 0.3;
+}
+
 .basket::before {
 background-position: -10px -185px;
 }
 
-
-
+.checkout {
+	  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
 
 .bookmark  a{
 	float: left;
