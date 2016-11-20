@@ -1071,27 +1071,95 @@ text-decoration: none;
 	margin-right: 20px;
 }
 
+.filter {
+	padding-left: 16px;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", sans-serif;
+	background: #f7f3ec;
+}
+
+.sort {
+	float: right;
+	width: 700px;
+	min-height: 40px;
+
+
+}
+
 .sort span {
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "PT Sans", sans-serif;
 	margin-right: 75px;
+	background: #f7f3ec;
 
 }
 
 .sort-gallery {	
 	
 	padding-left: 65px;
+	margin-right: 17px;
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "PT Sans", sans-serif;
 	text-decoration: none;
 	color: #c1beb8;
 	border-bottom: 1px dotted red;
-	
+
+}
+
+.sort-plus {
+ position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sort-plus::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/sprite.png") no-repeat;
+
+  
+}
+
+.sort-plus::before {
+	 background-position: -10px -750px;
 }
 
 
+.sort-minus{
+	 position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sort-minus::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/sprite.png") no-repeat;
+ 
+}
+
+.sort-minus::before {
+  background-position: -10px -343px;
+}
 
 
 .catalog-items {
@@ -1250,6 +1318,20 @@ text-decoration: none;
 	border: 20px solid white;
 	border-left-color: transparent;
 }
+
+.pages {
+	float: right;
+	width: 940px;
+}
+
+
+.goods-column  {
+	width: 940px;
+	min-height: 260px;
+	background: #f2f6f8;
+}
+
+.goods-column p{}
 
 .footer-higher {
 
