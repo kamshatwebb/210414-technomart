@@ -297,7 +297,6 @@ background-position: -10px -185px;
 .checkout a{
 	float: right;
 	min-width: 140px;
-
 	padding-top: 12px;
 	padding-bottom: 15px;
 	text-align: center;
@@ -358,6 +357,31 @@ margin-bottom: 25px;
 	color: #e9292a;
 }
 
+.phone-num {
+	  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.phone-num::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  width: 23px;
+  height: 23px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  opacity: 0.3;
+}
+
+.phone-num::before {
+	background-position: -10px -614px;
+}
+
 .contacts-header p {
 	color: #32425c;
 	font-size: 14px;
@@ -392,6 +416,30 @@ margin-bottom: 25px;
 	padding-right: 25px;
 }
 
+.welcome {
+	  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.welcome::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 1px;
+  width: 23px;
+  height: 23px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  opacity: 0.3;
+}
+
+.welcome::before {
+	background-position: -10px -540px;	
+}
 
 .user-block .registration {
 	display: inline-block;
