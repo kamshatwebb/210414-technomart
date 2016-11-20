@@ -205,6 +205,38 @@ form {
 }
 
 
+.bookmark  {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bookmark::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/sprite.png") no-repeat;
+
+  opacity: 0.3;
+}
+
+.bookmark::before {
+	 background-position: -10px -221px;
+}
+
+.basket::before {
+background-position: -10px -185px;
+}
+
+
+
 
 .bookmark  a{
 	float: left;
@@ -219,28 +251,6 @@ form {
     text-decoration: none;
 
 }
-
-/*.top-ico {
-	display: inline-block;
-	vertical-align: top;
-	width: 17px;
-	height: 17px;
-	font-size: 0px;
-	background-color: #293449;
-	position: relative;
-}
-
-.top-ico:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-image: ("../img/sprite.png");
-	background-repeat: no-repeat;
-}*/
-
-
 
 .basket a{
 	float: left;
@@ -292,7 +302,7 @@ form {
 min-height: 160px;
 clear: both;
 background: #f1f5f7;
-margin-bottom: 60px;
+margin-bottom: 25px;
 
 }
 
@@ -738,7 +748,7 @@ background: url(../img/shadow-service-menu.png) no-repeat;
  	color: #32425c;
  }
  
-.item-slider .active-btn {
+.active-delivery-slider {
 	background-color: #ffffff;
 }
 
@@ -874,13 +884,52 @@ text-decoration: none;
 /* Техномарт Каталог*/
 
 .breadcrumbs {
-	clear: both;
+  clear: both;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.breadcrumbs-whole {
 	display: inline-block;
-	width: 360px;
+	vertical-align: top;
+	width: 13px;
+	height: 13px;
+	font-size: 0;
+	background-color: white;
+	position: relative;
+}
+
+.breadcrumbs-whole:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("..img/sprite.png");
+	background-repeat: no-repeat;
+}
+
+.breadcrumbs-whole:before {
+
+	background-position: -10px -653px;
+}
+
+
+
+
+.breadcrumbs a, span{
+	position: relative;
+  	display: inline;
+  	padding-right: 40px;
 	font-size: 13px;
 	line-height: 18px;
-	margin-bottom: 20px;
-	
+	text-decoration: none;
+	font-family: "PT Sans", sans-serif;
+	color: #000000;
+
 }
 
 
@@ -895,6 +944,7 @@ text-decoration: none;
 	font-size:30px;
 	line-height: 30px;
 	padding-top: 30px
+
 }
 
 .filter-catalog {
@@ -1204,37 +1254,11 @@ color: #fdebec;
 
 }
 	
-/*.footer-social a{
-	text-decoration: none;
-	width: 45px;
-	height: 45px;
-	background: #212a3a;
-	border-radius: 50px;
-}
-
-.footer-social a::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-image: url("..img/sprite.png");
-	background-repeat: no-repeat;
-
-}
-
-.social-btn-vk::before {
-	width: 20px;
-    height: 12px;
-    background-position: -10px -818px;*/
-}
-
-
 
 .connection {
 	float: left;
 	width: 140px;
-	
+
 }
 
 
