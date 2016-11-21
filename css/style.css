@@ -1072,7 +1072,10 @@ text-decoration: none;
 }
 
 .filter {
-	padding-left: 16px;
+	min-height: 7px;
+	padding-left: 18px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "PT Sans", sans-serif;
@@ -1083,6 +1086,7 @@ text-decoration: none;
 	float: right;
 	width: 700px;
 	min-height: 40px;
+	background: #f7f3ec;
 
 
 }
@@ -1090,8 +1094,9 @@ text-decoration: none;
 .sort span {
 	font-size: 13px;
 	line-height: 18px;
+	padding-left: 20px;
 	font-family: "PT Sans", sans-serif;
-	margin-right: 75px;
+	margin-right: 55px;
 	background: #f7f3ec;
 
 }
@@ -1117,6 +1122,8 @@ text-decoration: none;
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
+  
+
 }
 
 .sort-plus::before {
@@ -1144,6 +1151,7 @@ text-decoration: none;
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
+
 }
 
 .sort-minus::before {
@@ -1320,18 +1328,53 @@ text-decoration: none;
 }
 
 .pages {
-	float: right;
-	width: 940px;
+	float: left;
+	margin-left: 240px;
+margin-top: 40px;
+margin-bottom: 50px;
+
+
+}
+
+.pages a {
+	font-size: 13px;
+	line-height: 18px;
+	margin-right: 10px;
+	font-family: "PT Sans", sans-serif;
+	text-decoration: none;
+	color: #000000;
+	border: 1px solid #e5e5e5;
+	padding: 8px 14px;
+}
+
+.pages a:hover {
+	border: 1px solid #bdc6ca;
+}
+
+.pages a:active {
+	border: 1px solid #ee3643;
 }
 
 
 .goods-column  {
-	width: 940px;
+	clear: both;
 	min-height: 260px;
 	background: #f2f6f8;
 }
 
-.goods-column p{}
+.goods-column h3{
+	font-size: 30px;
+	line-height: 24px;
+	padding-top: 65px;
+}
+
+.goods-column p {
+	font-size: 13px;
+	line-height: 24px;
+	font-family: "PT Sans", sans-serif;
+}
+
+
 
 .footer-higher {
 
