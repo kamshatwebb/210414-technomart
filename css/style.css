@@ -1081,6 +1081,7 @@ text-decoration: none;
 	font-family: "PT Sans", sans-serif;
 	background: #f7f3ec;
 	text-transform: uppercase;
+	border-radius:3px;
 }
 
 .price-title {
@@ -1133,11 +1134,69 @@ text-decoration: none;
 	left: 80%;
 }
 
+.user-price {
+  position: relative;
+  height: 38px;
+  margin-bottom: 26px;
+  font-size: 0px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.user-price::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 1px;
+	top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+	background: #444444;
+}
+
+.user-price label {
+	  display: inline-block;
+vertical-align: top;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PT Sans", sans-serif;
+    cursor: pointer;
+}
+
+.user-price .min-price,
+.user-price .max-price {
+	  width: 90px;
+}
+
+.user-price .min-price input {
+background: #f7f3ec;
+width: 55px;
+height: 30px;
+border-radius:3px;
+}
+.user-price .max-price input {
+background: #f7f3ec;
+width: 55px;
+height: 30px;
+border-radius:3px;
+}
+
+ .user-price input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  padding-left: 20px;
+ }
+
 .sort {
 	float: right;
 	width: 700px;
 	min-height: 40px;
 	background: #f7f3ec;
+	border-radius:3px;
 
 
 }
