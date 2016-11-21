@@ -1071,7 +1071,7 @@ text-decoration: none;
 	margin-right: 20px;
 }
 
-.filter {
+.filter-title {
 	min-height: 7px;
 	padding-left: 18px;
 	padding-top: 12px;
@@ -1080,6 +1080,57 @@ text-decoration: none;
 	line-height: 18px;
 	font-family: "PT Sans", sans-serif;
 	background: #f7f3ec;
+	text-transform: uppercase;
+}
+
+.price-title {
+	font-size: 17px;
+	line-height: 30px;
+	font-family: "PT Sans", sans-serif;
+	font-weight: bold;
+	padding: 20px 0px;
+	text-transform: uppercase;
+
+}
+
+.diapason-filter {
+  position: relative;
+  height: 80px;
+  margin-bottom: 32px;
+  background: #f7f3ec;
+}
+
+.diapason-filter .scale {
+ height: 2px;
+ background: #d7dcde;
+ bottom: 40px;
+}
+
+
+.diapason-filter .ruler-back {
+  width: 80%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.creepers {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.creepers-min {
+	 left: 0;
+}
+
+.creepers-max {
+	left: 80%;
 }
 
 .sort {
