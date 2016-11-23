@@ -587,6 +587,7 @@ margin-bottom: 25px;
 }
 
 .user-block {
+	position: relative;
 	float: right;
 	width: 300px;
 	min-height: 160px;	
@@ -597,7 +598,7 @@ margin-bottom: 25px;
 
 }
 
-.user-block a:before {
+.user-block a::before {
 	content: "";
   position: absolute;
   top: 14px;
@@ -608,7 +609,7 @@ margin-bottom: 25px;
   opacity: 0.3;
 }
 
-.user-block a:before {
+.user-block a::before {
 	background-position: -10px -898px;
 }
 
@@ -648,7 +649,7 @@ margin-bottom: 25px;
 	color: #cacaca;
 }
 
-.welcome::before {
+.welcome a::before {
   content: "";
   position: absolute;
   top: 14px;
@@ -659,7 +660,7 @@ margin-bottom: 25px;
   opacity: 0.3;
 }
 
-.welcome::before {
+.welcome a::before {
 	background-position: -10px -540px;	
 }
 
@@ -690,6 +691,7 @@ margin-bottom: 25px;
 
 
 .user-block .main-name {
+	 position: relative;
 	float:right;
 	width: 285px;
 	min-height: 45px;
@@ -711,7 +713,7 @@ margin-bottom: 25px;
 }
 
 
-.main-name:before {
+.main-name::before {
   content: "";
   position: absolute;
   top: 14px;
@@ -722,8 +724,8 @@ margin-bottom: 25px;
   opacity: 0.3;
 }
 
-.main-name:before {
-	    background-position: -10px -1312px;
+.main-name::before {
+    background-position: -10px -1312px;
 }
 
 
@@ -1069,6 +1071,7 @@ font-size: 0;
 }
 
 .item-slider { 
+	position: relative;
 	float: left;
 width: 230px;
 min-height: 180px;
@@ -1106,8 +1109,8 @@ background: url(../img/shadow-service-menu.png) no-repeat;
 .item-slider:before {
 	position: absolute;
     content: "";
-    top: 1885px;
-    left: 236px;
+    bottom: -55px;
+    left: 220px;
     width: 10px;
     height: 272px;
     background-image: url("../img/shadow-service-menu.png");
