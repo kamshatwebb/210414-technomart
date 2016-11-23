@@ -15,15 +15,15 @@
                     <div class="index-logo">
                         <p>ТЕХНОМАРТ</p>
                     </div>
-                    <form action="https://echo.htmlacademy.ru" method="get" class="search">
-                        <input type="search" name="search" placeholder="Поиск:" class="search-info"> 
-                        
+                    <form>
+                        <input class="search-header" type="search" name="search" placeholder="Поиск:"> 
+                           
                     </form>
                     <div class="bookmark">
-                        <a href="#">Закладки: 0</a>
+                        <a class="bookmark-ico" href="#">Закладки: 0</a>
                     </div>
                     <div class="basket">
-                        <a class="active-basket" href="#">Корзина: 10</a>
+                        <a class="basket-ico" class="active-basket" href="#">Корзина: 10</a>
                     </div>
                     <div class="checkout">
                         <a class="active-chekout" href="#">Оформить заказ</a>
@@ -46,7 +46,7 @@
                 <div class="user-block">
                     <div class="user-name">
                         <a class="main-name" href="#">Равшан Джамшутович</a>
-                        <a class="" href="#"></a>
+                        <a class="logout" href="#">Выйти</a>
                     </div>
                     <div class="user-point">
                         <a class="orders" href="#">Мои заказы</a>
@@ -68,11 +68,11 @@
         </header>
         <div class="container clearfix">
             <div class="breadcrumbs">
-                <a class="breadcrumbs-whole breadcrumbs-icon" href=""></a>
-                <a class="breadcrumbs-whole breadcrumbs-icon" href="../210414-technomart/index.html">На главную страницу</a>
-                <a class="breadcrumbs-whole breadcrumbs-icon" href="#">Каталог</a>
-                <a class="breadcrumbs-whole breadcrumbs-icon" href="#">Инструменты</a>
-                <a class="breadcrumbs-whole breadcrumbs-icon" href="#">Перфораторы</a>	
+                <a href=""></a>
+                <a href="../210414-technomart/index.html">На главную страницу</a>
+                <a href="#">Каталог</a>
+                <a href="#">Инструменты</a>
+                <a href="#">Перфораторы</a>	
             </div>
             <div class="popular-goods-catalog">
                 <h3 class="catalog-title">Перфораторы</h3>
@@ -80,66 +80,82 @@
         </div>
         <div class="container">
             <div class="sort-choice-column">
-          
                 <div class="filter-catalog">
-
+                <form action="form.php" method="GET">
                     <div class="filter-title">Фильтр:</div>
                     <div class="price-title">Цена:</div>
 
-  <form action="form.php" method="GET">
-                    <div class="range-filter">
-          <div class="range-controls">
-              <div class="scale">
-              <div class="bar"></div>
-          </div>
-          
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
-        </div>
-        
-        
-        <div class="price-controls">
-          <label class="min-price">  <input name="min-price" type="text" value="0"></label>
-          <label class="max-price"> <input name="max-price" type="text" value="30000"></label>
-        </div>
-      </div>
-				
-			</form> 
-                    <div class="choice-makers">
-                        <span>Производители:</span>
-                        <form action="#" method="GET">    
-                            <input type="checkbox" name="BOSCH" value="choice1" id="bosch" checked>
-                            <label for="bosch">BOSCH</label>
-                            <input type="checkbox" name="ИНТЕРСКОЛ" value="choice2" id="interskol">
-                            <label for="interskol">ИНТЕРСКОЛ</label>
-                            <input type="checkbox" name="MAKITA" value="choice3" id="makita" checked>
-                            <label for="makita">MAKITA</label>
-                            <input type="checkbox" name="DEWALT" value="choice4" id="dewalt">
-                            <label for="dewalt">DEWALT</label>
-                            <input type="checkbox" name="HITACHI" value="choice5" id="hitachi">
-                            <label for="hitachi">HITACHI</label>            
-                        </form>
-                    </div>
+                    
 
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">  <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price"> <input name="max-price" type="text" value="30000"></label>
+                            </div>
+                        </div>
+                    
+                    <div class="choice-makers">
+                        <h3>Производители:</h3>
+                        
+                            <ul>
+                                <li>
+                                    <input class="makers-checkbox" type="checkbox" name="BOSCH" value="choice1" id="bosch" checked>
+                                    <label class="makers-title" for="bosch"><span class="checkbox-choiced"></span>BOSCH</label>
+                                </li>
+                                <li>
+                                    <input  class="makers-checkbox" type="checkbox" name="ИНТЕРСКОЛ" value="choice2" id="interskol">
+                                    <label class="makers-title" for="interskol"><span class="checkbox-choiced"></span>ИНТЕРСКОЛ</label>
+                                </li>
+                                <li>
+                                    <input class="makers-checkbox" type="checkbox" name="MAKITA" value="choice3" id="makita" checked>
+                                    <label class="makers-title" for="makita"><span class="checkbox-choiced">MAKITA</span></label>
+                                </li></span>
+                                <li>
+                                    <input class="makers-checkbox" type="checkbox" name="DEWALT" value="choice4" id="dewalt">
+                                    <label class="makers-title" for="dewalt"><span class="checkbox-choiced">DEWALT</span></label>
+                                </li>
+                                <li>
+                                    <input class="makers-checkbox" type="checkbox" name="HITACHI" value="choice5" id="hitachi">
+                                    <label class="makers-title" for="hitachi"><span class="checkbox-choiced">HITACHI</span></label>
+                                </li>
+                            </ul>
+                        
+                    </div>
                     <div class="choice-battery">
-                        <span>Питание:</span>
-                        <form action="#" method="post">
-                            <input type="radio" name="battery" value="a1" id="battery-a1" checked>
-                            <label for="battery-a1"> Аккумуляторные </label> <br>
-                            <input type="radio" name="battery" value="a2" id="battery-a2">
-                            <label for="battery-a2"> Сетевые </label>
-                        </form>
+                        <h3>Питание:</h3>
+                      
+                            <ul>
+                                <li>
+                                    <input class="battery-radio" type="radio" name="battery" value="a1" id="battery-a1" checked>
+                                    <label class="battery-text" for="battery-a1"><span class="battery-choiced"></span>Аккумуляторные</label> 
+                                </li>
+                                <li>
+                                    <input class="battery-radio" type="radio" name="battery" value="a2" id="battery-a2">
+                                    <label class="battery-text" for="battery-a2"><span class="battery-choiced"></span>Сетевые</label>
+                                </li>
+                            </ul>
+                            <div class="show-results-btn">
+                            	
+								<input class="show-results-btn" type="submit" value="button">Показать
+							
+							</div>
+                        
+
                     </div>
-                    <div class="show-results-button">
-                        <a href="#">Показать</a>
-                    </div>
+				</form>	
                 </div>
             </div>
-            </div>
-</div>
-        
+        </div>
+        </div>
         <div class="container clearfix">
-             <div class="gallery-of-goods">
+            <div class="gallery-of-goods">
                 <div class="sort">
                     <span>Сортировка:</span>
                     <a class="sort-gallery active-sort" href="">По цене</a>
@@ -261,15 +277,12 @@
                 <a href="#">Следующая</a>
             </div>
         </div>
-        
-            <div class="goods-column">
-
-                <div class="container">
-                	<h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
-                	<p>Перфоратор - универсальный строительный элемент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехотжимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель. </p>
-                </div>
+        <div class="goods-column">
+            <div class="container">
+                <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
+                <p>Перфоратор - универсальный строительный элемент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехотжимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель. </p>
             </div>
-        
+        </div>
         <footer class="footer-higher clearfix">
             <div class="container">
                 <div class="index-logo">
