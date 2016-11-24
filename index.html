@@ -82,15 +82,28 @@
                         
                     </article>
                     <div class="slider">
-                        <h2>Перфораторы</h2>
-                            <p>Настоящие мужские игрушки</p>
-                        
+                         <input type="radio" name="option" id="punchers" checked>
+						<input type="radio" name="option" id="drills">
+							<div class="slider-controls">
+								<label for="punchers" class="punchers"></label>
+								<label for="drills" class="drills"></label>
+							</div>
+							<div class="category-slider">
+								<div class="punchers-slider">
+									<h3>Перфораторы</h3>
+									<p>Настоящие мужские игрушки</p>
+								</div>
+							<div class="drills-slider">
+									<h3>Дрели</h3>
+									<p>Соседям на радость!</p>			
+							</div>
                         <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                    </div>
                     </div>
                     <article class="category-item sale">
                         <h2>Скидки 50%</h2>
                         <a href="#">НА 350 ТОВАРОВ</a>
-                        
+
                     </article>
                     <article class="category-item delivery-free">
                         <h2>Доставка</h2>
@@ -174,26 +187,51 @@
                     <a class="makers" href="" style="line-height: 140px"><img class="point" src="img/metabo.png"  alt="Metabo"></a>
                 </div>
                  </div>
-                <section class="service-slider clearfix">
-                    <div class="container">
-                    		<div class="services">
-                       		 <h3>СЕРВИСЫ</h3>
-                        			<p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сих, чтобы сделать ваши покупки приятными. </p>
-                        </div>
-                    <div class="item-slider">
-                    <form action="form.php" method="GET">
-                    <label class="active-delivery-slider" for="delivery-slider">Доставка</label>
-                    <label for="guarantee">Гарантия</label>
-                    <label for="credit">Кредит</label>
-                    </form>
-                    </div>
-                        <div class="delivery">
-                        		<h3>Доставка</h3>
-                        <p>Мы с удовольствием доставим товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                        </div>
-                    </div>
-
-                </section>
+                 
+		<section class="services">
+			<div class="container">
+				<div class="services-introduction">
+					<h2>Сервисы</h2>
+					<p class="services-description">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+				</div>
+				<!-- слайдер будет настроен позже -->
+				<div class="service-information">					
+						<input type="radio" name="point" id="slide1" checked>
+						<input type="radio" name="point" id="slide2">
+						<input type="radio" name="point" id="slide3">
+						<div class="controls">
+							<label class="for-slide1" for="slide1">Доставка</label>
+							<label class="for-slide2" for="slide2">Гарантия</label>
+							<label class="for-slide3" for="slide3">Кредит</label>
+						</div>
+						<div class="service-slider">
+							<div class="slides slide1">
+								<div class="service-description">
+									<h2>Доставка</h2>
+									<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>
+									Ведь мы неплохо заработаем, <br>поднимая его на ваш на этаж!</p>
+								</div>
+								<div class="service-image">	</div>
+							</div>
+							<div class="slides slide2">
+								<div class="service-description">
+									<h2>Гарантия</h2>
+									<p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+								</div>
+								<div class="service-image">	</div>
+							</div>
+							<div class="slides slide3">
+								<div class="service-description">
+									<h2>Кредит</h2>
+									<p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+									<a href="#" class="service-reguest">Оставить заявку</a>
+								</div>
+								<div class="service-image">	</div>
+							</div>
+						</div>					
+				</div>
+			</div>
+		</section>
                 <section class="company-details">
                     <div class="container">
                         <div class="about-us clearfix">

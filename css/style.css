@@ -1,7 +1,7 @@
 body {
 	font-size: 14px;
 	line-height: 24px;
-	font-family: "Cuprum", Arial, sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	color: #01070a;
 	min-width: 960px;
 	background: white;
@@ -317,7 +317,7 @@ outline: 1px solid red;
 	color: white;
 	font-size: 17px;
 	line-height: 18px;
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum","Arial", sans-serif;
 	background-color: #293449;
 	outline:none;
 }
@@ -580,7 +580,7 @@ margin-bottom: 25px;
 	font-size: 14px;
 	line-height: 24px;
 	margin-top: 5px;
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum","Arial", sans-serif;
 	font-weight:  bold;
 }
 
@@ -941,16 +941,16 @@ color: #a8abaf;
 	color: white;
 }
 
-.slider {
+.slider{
+	position: relative;
 	float: left;
 	min-width: 620px;
 	min-height: 266px;
 	margin-top: 20px;
 	padding: 0px;
-	background: url("../img/slider-img.png") no-repeat 0 0;
 }
 
-.slider h2 {
+.slider h3{
 	 margin: 0;
     margin-top: 30px;
     margin-bottom: 0;
@@ -958,7 +958,7 @@ color: #a8abaf;
     color: #fff;
     font-size: 36px;
     line-height: 30px;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum","Arial", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -975,30 +975,110 @@ color: #a8abaf;
 
 
 .slider a{
-width: 190px;
-min-height: 10px;
-font-size: 14px;
-line-height: 18px;
-padding: 15px 40px;
-margin-top: 110px;
-color: white;
-background:#ee3643;
-border-radius:3px;
-text-align: center;
-text-decoration: none;
-margin-left: 25px;
-border-radius: 3px;
+  position: absolute;
+  top: 205px;
+  width:195px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 3px;
+  background-color: #ee3643; 
+  margin-left: 24px;
 }
 
-.slider a:hover {
-	background-color: #ca2c37;
+.slider a:hover{
+  background-color: #ca2c37;
+}
+.slider a:active{
+  background-color: #ca2c37;
 }
 
-.slider a:active {
-	background-color: #ba2732;
+.slider input{
+ position: absolute;
+ top:280px;
+ left: 50px;
+ margin-right: 20px;
+ display: none;
+}
+
+.slider-controls{
+  position: absolute;
+  min-width: 35px;
+  min-height: 10px;
+  top: 212px;
+  left: 282px;
+  z-index: 2;
+}
+
+.slider-controls label{
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    margin-left: 10px;  
 }
 
 
+label.punchers::before{
+  position: absolute;
+  content: "";
+  background: url("../img/sprite.png") no-repeat;
+  width: 22px;
+  height: 40px;
+  bottom: 73px;
+  right: 255px;
+  background-position: -10px -801px;
+}
+
+label.drills::before{
+  position: absolute;
+  content: "";
+  background: url("../img/sprite.png") no-repeat;
+  width: 22px;
+  height: 40px;
+  bottom: 73px;
+  left: 260px;
+ background-position: -10px -1048px;
+}
+
+#punchers:checked ~ .slider-controls>.punchers,
+#drills:checked ~ .slider-controls>.drills{
+  background-color: #ee3643;
+}
+
+
+
+.category-slider>div{
+  position: absolute;
+  width: 620px;
+  height: 265px;
+  display: none;
+  box-sizing: border-box;
+  padding-left: 24px;
+}
+
+.category-slider .punchers-slider{
+  background: url("../img/punchers-slider.jpg");
+}
+.category-slider .drills-slider{
+  background: url("../img/drills-slider.jpg");
+}
+
+#punchers:checked ~ .category-slider>.punchers-slider,
+#drills:checked ~ .category-slider>.drills-slider{
+  display: block;
+
+}
 
 
 .popular-header {
@@ -1083,97 +1163,203 @@ font-size: 0;
  }
 
 
-.services h3 {
-	padding-top: 65px;
-	font-size: 30px;
-	line-height: 24px;
+.services{              
+  min-height: 400px;
+  margin-bottom: 80px;
+  background-color: #f2f6f8;
+  padding-top: 67px;
+  padding-bottom: 50px
+}
+.services h2{
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 27px;
+}
+.services p{
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  padding-left: 4px;
+}
+.services-introduction{                     
+  min-height: 100px;
+  margin-bottom: 63px;
+}
+.service-information-menu ul{               
 }
 
-.services p {
-	font-size: 13px;
-	line-height: 24px;
-	font-family: "PT Sans", sans-serif;
-	width: 400px;
+.service-information-menu li{
+  
+  list-style: none;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+  border-bottom:1px solid #293449;
+  border-top: 1px solid #405069;
 }
-
-.item-slider { 
-	position: relative;
-	float: left;
-width: 230px;
-min-height: 180px;
-margin-top: 30px;
-padding: 0px;
-background: url(../img/shadow-service-menu.png) no-repeat;
+.service-information-menu a{
+  display: block;
+  text-decoration: none;
+  padding:16px 22px;
+  color: #fff;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  background-color: #32425c;
+}
+.service-information{
+  position: relative;
+  min-height: 235px;
+}
+.service-information input{
+  display: none;
+}
+ .controls{
+  position: relative;
+  width: 320px;
+  float: left;
+  padding-right: 80px;
+  box-sizing: border-box;
+  margin-top: 5px;
  }
-
- .item-slider label {
- 	display: block;
- 	width: 210px;
- 	min-height: 39px;
- 	padding-left: 20px;
- 	padding-top: 20px;
- 	font-size: 21px;
- 	line-height: 30px;
- 	font-weight: bold;
- 	background: #32425c;
- 	color: white;
- 	border-bottom:   1px solid #405069;
- 	border-bottom: 1px solid #405069;
+ .controls::before{
+  position: absolute;
+  content: "";
+  top: -40px;
+  right: 80px;
+  width: 10px;
+  height: 272px;
+  background-image: url("../img/tservice-slider-left-border.png");
+  background-repeat: no-repeat; 
+  z-index: 15;
+}
+ .controls label{
+  display: block;
+  width: 240px;
+  text-decoration: none;
+  padding:15px 22px;
+  color: #fff;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  background-color: #32425c;
+  border-bottom:1px solid #293449;
+  border-top: 1px solid #405069;
+  box-sizing: border-box;
+  cursor: pointer;
  }
-
- .item-slider label:hover {
- 	background: white;
- 	color: #32425c;
-
+ .controls label:first-child{
+  border-top: 0;
  }
- 
-.item-slider .active-delivery-slider {
-	background-color: #ffffff;
-	color: #32425c;
-}
-
-.item-slider:before {
-	position: absolute;
-    content: "";
-    bottom: -55px;
-    left: 220px;
-    width: 10px;
-    height: 272px;
-    background-image: url("../img/shadow-service-menu.png");
-    background-repeat: no-repeat;
-    z-index: 15;
-}
-
-.delivery {
-	float: right;
-	width: 620px;
-	min-height: 300px;
-	margin-right: 0px;
-	background: url(../img/delivery-car-1.png) no-repeat 0 0;
-	background-position: 100% 50%;
-
-}
-
-.delivery h3{
-	font-size: 30px;
-	line-height: 24px;
-	text-transform: uppercase;
-	
-}
-
-.delivery p{
-	padding-top: 30px;
-	width: 300px;
-	margin-right: 20px;
+ .controls label:last-child{
+  border-bottom: 0;
+ }
+ .controls label:hover{
+  background-color: #293449;
+ }
+ .service-slider{
+  width: 620px;
+  float: left;
+  min-height: 225px;
+ }   
+.service-slider>div{
+  position: absolute; 
+  min-height: 225px; 
+  opacity: 0;
+  width: 620px;
 }
 
 
-
-.service-slider {
-
-	min-height: 520px;
-	background: #f2f6f8;
+#slide1:checked ~ .service-slider>.slide1,
+#slide2:checked ~ .service-slider>.slide2,
+#slide3:checked ~ .service-slider>.slide3{
+  display: block;
+  opacity: 1;
 }
+#slide1:checked ~ .controls>.for-slide1{                   /*не работает изменение при выборе пункта слайдера*/
+  color: #32425c;
+  background-color: #fff;
+}
+#slide2:checked ~ .controls>.for-slide2{
+  color: #32425c;
+  background-color: #fff;
+}
+#slide3:checked ~ .controls>.for-slide3{
+  color: #32425c;
+  background-color: #fff;
+}
+.service-information input:checked{
+  
+}
+.service-description{  
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  z-index: 3;
+  width: 300px;
+    
+}
+.service-description h2{
+  font-size: 36px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  margin-bottom: 28px;
+  margin-top: 6px;
+}
+.service-description p{
+  margin: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  padding-right: 19px;
+  color: #000;
+  margin-left: -3px;
+}
+a.service-reguest{
+  width: 195px;
+  margin-top: 29px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 3px;
+  background-color: #ee3643;
+}
+ .service-image{
+  position: absolute;
+  right: 2px;
+  top: 30px;
+  z-index: 2;
+  width: 320px;
+  min-height: inherit;
+}
+.slide1 .service-image{
+  width: 468px;
+  height: auto;
+  background: url("../img/delivery-car-1.png") no-repeat;
+}
+.slide2 .service-image{
+  width: 389px;
+  height: auto;
+  background: url("../img/guarantee.png") no-repeat;
+}
+.slide3 .service-image{
+  width: 465px;
+  height: auto;
+  background: url("../img/credit.png") no-repeat;
+}
+
 
 
 .company-details  {
@@ -1201,7 +1387,7 @@ background: url(../img/shadow-service-menu.png) no-repeat;
 	line-height: 24px;
 	padding-right: 20px;
 	padding-bottom: 35px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans","Arial", sans-serif;
 }
 
 .about-us-features li {
@@ -1387,7 +1573,7 @@ text-transform: uppercase;
 .price-title {
 	font-size: 17px;
 	line-height: 30px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans","Arial", sans-serif;
 	font-weight: bold;
 	padding: 20px 0px;
 	text-transform: uppercase;
@@ -1479,12 +1665,17 @@ text-transform: uppercase;
 
 
 
- .choice-makers {
+ .choice-makers{
 	clear: both;
     margin-top: 20px;
+    position: relative;
 }
 
-.choice-makers h3 {
+
+
+
+
+.choice-makers h3{
 	font-size: 17px;
 	line-height: 30px;
 	font-family: "PT Sans", "Arial", sans-serif;
@@ -1492,12 +1683,12 @@ text-transform: uppercase;
 	font-weight: bold;
 }
 
-.choice-makers ul {
+.choice-makers {
 	margin: 0px;
 	padding: 0px;
 }
 
-.choice-makers li {
+.choice-makers {
 	position: relative;
 	text-decoration: none;
     text-transform: uppercase;
@@ -1505,7 +1696,14 @@ text-transform: uppercase;
     margin: 0;
     cursor: pointer;
     padding-top: 6px;
-    padding-bottom: 10px;
+    
+}
+
+.choice-makers::before {
+ position: absolute;
+  content: "";
+  border-bottom: 1px solid black;
+  border-width: 240px;
 }
 
 .checkbox-choiced{
@@ -1554,6 +1752,8 @@ text-transform: uppercase;
 opacity: 0.3;
 }
 .makers-title {
+	display: block;
+	padding-bottom: 25px;
  font-family: "PT Sans","Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
@@ -1584,9 +1784,10 @@ opacity: 0.3;
 	font-family: "PT Sans","Arial", sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
+	    margin: 0px;
 }
 
-.choice-battery li {
+.choice-battery {
 	    text-decoration: none;
     text-transform: uppercase;
     list-style: none;
@@ -1596,7 +1797,7 @@ opacity: 0.3;
     padding-bottom: 10px;
 }
 
-.choice-battery ul {
+.choice-battery  {
 	padding: 0px;
 }
 
@@ -1605,6 +1806,9 @@ opacity: 0.3;
 }
 
 .battery-text {
+	display: block;
+	    padding-top: 15px;
+    margin-left: 30px;
 	font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -1699,7 +1903,7 @@ opacity: 0.3;
 	margin-right: 17px;
 	font-size: 13px;
 	line-height: 18px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans","Arial", sans-serif;
 	text-decoration: none;
 	color: #c1beb8;
 	border-bottom: 1px dotted red;
@@ -1859,7 +2063,7 @@ opacity: 0.3;
 	color: white;
 	font-size: 14px;
 	font-weight: normal;
-	font-family: "Cuprum", "sans-serif";
+	font-family: "Cuprum","Arial", "sans-serif";
 	line-height: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -1947,7 +2151,7 @@ margin-bottom: 50px;
 	font-size: 13px;
 	line-height: 18px;
 	margin-right: 10px;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans","Arial", sans-serif;
 	text-decoration: none;
 	color: #000000;
 	border: 1px solid #e5e5e5;
