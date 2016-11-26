@@ -267,9 +267,11 @@ outline: 1px solid red;
   color: #f8f8f8;
   background-color: #293449;
   font-size: 0px;
+  min-height: 42px;
 }
 
 .index-logo {
+
   float: left;
   width: 220px;
   min-height: 40px;
@@ -293,12 +295,13 @@ outline: 1px solid red;
   line-height: 24px;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding: 10px;
+  padding: 9px;
   box-shadow: 0px 6px 0px 0px #b52933;
   text-transform: uppercase;
 }
 
 .index-logo a {
+	display: block;
   color: white;
   font-size: 24px;
   line-height: 24px;
@@ -327,19 +330,20 @@ outline: 1px solid red;
   outline: none;
 }
 
-.search-submit {
+input.search-submit {
   content: "";
   position: absolute;
   top: 14px;
-  left: 9px;
+  left: 15px;
   width: 20px;
   height: 20px;
+  text-align: center;
   background: transparent url("../img/sprite.png") no-repeat;
   opacity: 0.3;
   background-position: -10px -1140px;
 }
 
-.search-submit:focus {
+.search-header:focus {
 	z-index: 100px;
 	 background-position: -10px -1177px;
 }
@@ -358,18 +362,17 @@ outline: 1px solid red;
   border:none;
  }
 
- .search-header:focus::before{                            /*не видна в фокусе*/
-    background-position: -10px -1490px;
+ .search-header:focus::before{                            
+     background-position: -10px -1177px;
     background-color: white;
-
 }
 
 
 
 .search-header {
   width: 260px;
-  min-height: 45px;
-  padding-left: 40px;
+  min-height: 41px;
+  padding-left: 47px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   outline: none;
@@ -407,7 +410,7 @@ outline: 1px solid red;
   content: "";
   position: absolute;
   top: 12px;
-  left: 15px;
+  left: 9px;
   width: 18px;
   height: 18px;
   background: transparent url("../img/sprite.png") no-repeat;
@@ -446,7 +449,7 @@ outline: 1px solid red;
   content: "";
   position: absolute;
   top: 12px;
-  left: 15px;
+  left: 17px;
   width: 18px;
   height: 18px;
   background: transparent url("../img/sprite.png") no-repeat;
@@ -490,9 +493,9 @@ outline: 1px solid red;
 .bookmark a {
   float: left;
   min-width: 140px;
-  margin-left: 10px;
-  padding-top: 12px;
-  padding-bottom: 15px;
+
+  padding-top: 11px;
+  padding-bottom: 14px;
   text-align: center;
   font-size: 17px;
   line-height: 18px;
@@ -503,9 +506,11 @@ outline: 1px solid red;
 .basket a {
   float: left;
   min-width: 140px;
-  margin-left: 10px;
-  padding-top: 12px;
-  padding-bottom: 15px;
+  
+  padding-top: 11px;
+  padding-left: 12px;
+
+  padding-bottom: 14px;
   text-align: center;
   font-size: 17px;
   line-height: 18px;
@@ -516,8 +521,10 @@ outline: 1px solid red;
 .checkout a {
   float: right;
   min-width: 140px;
-  padding-top: 12px;
-  padding-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 14px;
+  padding-left: 5px;
+  padding-right: 4px;
   text-align: center;
   font-size: 17px;
   line-height: 18px;
@@ -528,12 +535,12 @@ outline: 1px solid red;
 .description {
   float: left;
   width: 300px;
-  min-height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  min-height: 103px;
+  padding-top: 41px;
+  
   margin-right: 20px;
   clear: both;
-  text-align: center;
+  
 }
 
 .description .header-resume {
@@ -568,7 +575,9 @@ outline: 1px solid red;
   padding-left: 70px;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-right: 40px;
+  padding-right: 48px;
+      margin-right: 38px;
+      margin-top: 9px;
   font-size: 21px;
   color: #e9292a;
 }
@@ -578,6 +587,7 @@ outline: 1px solid red;
   display: inline-block;
   font-size: 16px;
   line-height: 20px;
+
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
@@ -587,7 +597,7 @@ outline: 1px solid red;
   content: "";
   position: absolute;
   top: 11px;
-  left: 20px;
+  left: 13px;
   width: 23px;
   height: 23px;
   background: transparent url("../img/sprite.png") no-repeat;
@@ -603,6 +613,7 @@ outline: 1px solid red;
   font-size: 14px;
   line-height: 24px;
   margin-top: 5px;
+  margin-right: 24px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: bold;
 }
@@ -621,7 +632,7 @@ outline: 1px solid red;
 .user-block .welcome {
   display: inline-block;
   vertical-align: top;
-  margin-top: 35px;
+  margin-top: 45px;
   margin-left: 20px;
   border: 1px solid white;
   color: #000000;
@@ -679,7 +690,7 @@ outline: 1px solid red;
   border: 1px solid white;
   color: #000000;
   text-decoration: none;
-  margin-top: 35px;
+  margin-top: 45px;
   margin-left: 5px;
   background-color: #ffffff;
   padding-right: 25px;
@@ -2576,7 +2587,7 @@ display: none;
 
 
 .item-added-to-basket {
-  
+  display: none;
   position: relative;
   width: 620px;
   height: 282px;
