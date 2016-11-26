@@ -344,6 +344,27 @@ outline: 1px solid red;
 	 background-position: -10px -1177px;
 }
 
+ .search-header:focus+input.search-submit{
+ 	  position: absolute;
+  top: 13px;
+  left: 15px;
+  background-color: inherit;
+  background-image: url("../img/sprite.png");
+  opacity: 1;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+     background-position: -10px -1140px;
+  border:none;
+ }
+
+ .search-header:focus::before{                            /*не видна в фокусе*/
+    background-position: -10px -1490px;
+    background-color: white;
+
+}
+
+
 
 .search-header {
   width: 260px;
@@ -1634,6 +1655,7 @@ a.service-reguest {
 .price-controls {
   font-size: 0;
   margin-right: 20px;
+  margin-bottom: 30px;
 }
 
 .price-controls label {
@@ -1663,6 +1685,7 @@ a.service-reguest {
   clear: both;
   margin-top: 20px;
   position: relative;
+  border-top: 1px solid #dadbdc;
 }
 
 .choice-makers h3 {
@@ -1686,6 +1709,9 @@ a.service-reguest {
   margin: 0;
   cursor: pointer;
   padding-top: 6px;
+  margin-top: 25px;
+  border-bottom:  1px solid #e5e5e5;
+
 }
 
 .choice-makers::before {
@@ -1784,6 +1810,10 @@ a.service-reguest {
   padding-left: 35px;
   padding-top: 6px;
   padding-bottom: 10px;
+  margin-top: 20px;
+  
+ 
+
 }
 
 .choice-battery {
@@ -1863,11 +1893,12 @@ a.service-reguest {
 
 .sort {
   float: right;
-  width: 700px;
-  min-height: 40px;
-  background: #f7f3ec;
-  border-radius: 3px;
-  margin-bottom: 20px;
+    width: 700px;
+    min-height: 32px;
+    background: #f7f3ec;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding-top: 10px;
 }
 
 .sort span {
@@ -1906,6 +1937,16 @@ a.service-reguest {
   border: none;
 }
 
+.sort .active-sort:hover {
+	border-bottom: 1px solid #ee3643;
+	color: black ;
+} 
+
+.sort .active-sort:active {
+	color: #ee3643;
+	border-bottom: none;
+}
+
 .sort-plus {
   position: relative;
   display: inline-block;
@@ -1930,6 +1971,14 @@ a.service-reguest {
   background-position: -10px -1214px;
 }
 
+.sort-plus:hover::before {
+	 background-position: -10px -1244px;
+}
+
+.sort-plus:active::before {
+ background-position: -10px -1214px;
+}
+
 .sort-minus {
   position: relative;
   display: inline-block;
@@ -1952,6 +2001,15 @@ a.service-reguest {
 .sort-minus::before {
   background-position: -10px -634px;
 }
+
+.sort-minus:hover::before {
+	 background-position: -10px -664px;
+}
+
+.sort-minus:active::before {
+	 background-position: -10px -1461px;
+}
+
 
 .catalog-items {
   float: left;
@@ -2367,18 +2425,20 @@ a.service-reguest {
 
 
 /*Карта*/
-.big-map {
-  position: fixed;
+.big-map-img {
+	display: none;
+  position: relative;
   top: 50%;
   left: 50%;
   margin-top: -215px; 
-  margin-left: -310px; 
+  margin-left: -470px; 
   z-index: 30;
   box-shadow: 0px 20px 40px 0px rgba(41,52,73,0.75);
 }
 
-.window-close-btn{
-	  position: absolute;
+.window-close-btn {
+	display: none;
+  position: absolute;
   font-size: 0;
   width: 0;
   height: 0;
@@ -2388,19 +2448,7 @@ a.service-reguest {
   border: 0;
   outline: none;
   cursor: pointer;
-}
 
-.window-close-btn {
-  position: absolute;
-  font-size: 0;
-  width: 0;
-  height: 0;
-  right: -700px;
-  top:7px;
-  background-color: transparent;
-  border: 0;
-  outline: none;
-  cursor: pointer;
 }
 
 .window-close-btn::after,
