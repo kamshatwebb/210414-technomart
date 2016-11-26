@@ -314,78 +314,59 @@ outline: 1px solid red;
 	text-transform: uppercase;
 }
 
- .search-header {
-	float: left;
-	padding-left: 50px;
-	min-width: 90px;
-	min-height: 42px;
-	margin-right: 34px;
-	border: none;
-	width: 100%;
-	min-height: 42px;
-	margin-right: 40px;
-	color: white;
-	font-size: 17px;
-	line-height: 18px;
-	font-family: "Cuprum","Arial", sans-serif;
-	background-color: #293449;
-	outline:none;
-}
-
-.search-header input:focus {
-	background: white;
-}
-
-.search-header input::after{
-	 content: "";
-  position: absolute;
-  top: 13px;
-  left: 15px;
-  background-color: inherit;
-  background-image: url("../img/sprite.png");
-  opacity: 0.3;
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 17px;
-  background-position: -10px -1177px;
-  border:none;
-}
-
-
 
 .search-form {
+	width: 260px;
 	  position: relative;
   display: inline-block;
-  font-size: 16px;
+    font-size: 16px;
   line-height: 20px;
   vertical-align: top;
-  color: #ffffff;
+  margin-right: 18px;
+  background-color: #293449;
   text-decoration: none;
+ }
+
+
+
+.search-submit {
+	border: none;
+	outline: none;
+
 }
 
-.search-form:focus {
-	background-color: rgba(0 0 0  0.1);
-}
-
-.search-header::before {
+.search-submit{
   content: "";
   position: absolute;
-  top: 12px;
-  left: 15px;
-  width: 18px;
-  height: 18px;
+  top: 14px;
+  left: 9px;
+  width: 20px;
+  height: 20px;
   background: transparent url("../img/sprite.png") no-repeat;
-  opacity: 0.3;
+ opacity: 0.3;
+  background-position: -10px -1140px;
+  
 }
 
-.search-form::before {
-	  background-position: -10px -1140px;
+.search-header {
+	width: 260px;
+	min-height:  45px;
+	padding-left: 40px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 17px;
+	outline: none;
+	background-color: #293449;
+	border: none;
 }
 
-.search-form:focus::before {
-	    background-position: -10px -1177px;
-	    z-index: 50;
+.search-header:hover{
+	color: white;
 }
+
+.search-header:focus{
+	background-color: #ffffff;
+}
+
 
 .bookmark  {
   position: relative;
@@ -398,6 +379,14 @@ outline: 1px solid red;
 
 }
 
+.bookmark:hover {
+	background-color: #212a3a;
+}
+
+
+.bookmark:active {
+	background-color: #161d29;
+}
 
 .bookmark-ico::before {
   content: "";
@@ -431,6 +420,18 @@ outline: 1px solid red;
   color: #ffffff;
   text-decoration: none;
 }
+
+
+
+.basket:hover {
+	background-color: #212a3a;
+}
+
+
+.basket:active {
+	background-color: #161d29;
+}
+
 
 
 .basket .basket-ico::before {
