@@ -322,6 +322,7 @@ outline: 1px solid red;
 }
 
 .search-submit {
+	position: absolute;
   border: none;
   outline: none;
 }
@@ -337,6 +338,12 @@ outline: 1px solid red;
   opacity: 0.3;
   background-position: -10px -1140px;
 }
+
+.search-submit:focus {
+	z-index: 100px;
+	 background-position: -10px -1177px;
+}
+
 
 .search-header {
   width: 260px;
@@ -2360,7 +2367,59 @@ a.service-reguest {
 
 
 /*Карта*/
-.big-map {}
+.big-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -215px; 
+  margin-left: -310px; 
+  z-index: 30;
+  box-shadow: 0px 20px 40px 0px rgba(41,52,73,0.75);
+}
+
+.window-close-btn{
+	  position: absolute;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  right: 1px;
+  top:7px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.window-close-btn {
+  position: absolute;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  right: -700px;
+  top:7px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.window-close-btn::after,
+.window-close-btn::before{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 4px;
+  background-color: #ee3643;
+  border-radius: 1px;
+  right: 4px;
+  top: 8px;
+}
+.window-close-btn::after{
+  transform:rotate(45deg);
+}
+.window-close-btn::before{
+  transform:rotate(-45deg);
+}
 
 
 
